@@ -16,10 +16,17 @@ This repository contains all weekly tasks completed as part of the **AI/ML Track
 
 ## 🗂️ Repository Structure
 
+```
 coderoomhub-internship/
-├── week_1/ → Exploratory Data Analysis (Automobile Dataset)
-└── week_2/ → Supervised ML (Breast Cancer Dataset)
-
+├── week_1/
+│   ├── Task_Week_1.ipynb
+│   ├── automobile_dataset.csv
+│   ├── cleaned_automobile_dataset.csv
+│   └── README.md
+└── week_2/
+    ├── breast_cancer_ml.ipynb
+    └── README.md
+```
 
 ## 📅 Weekly Progress
 
