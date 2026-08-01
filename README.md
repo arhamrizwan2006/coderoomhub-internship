@@ -16,22 +16,25 @@ This repository contains all weekly tasks completed as part of the **AI/ML Track
 
 ## 🗂️ Repository Structure
 
-```
-coderoomhub-internship/
-├── week_1/
-│   ├── Task_Week_1.ipynb
-│   ├── automobile_dataset.csv
-│   ├── cleaned_automobile_dataset.csv
-│   └── README.md
-├── week_2/
-│   ├── Task_Week_2.ipynb
-│   ├── data.csv
-│   └── README.md
-└── week_3/
-    ├── Task_Week_3.ipynb
-    ├── titanic.csv
-    ├── feature_importance_chart.png
-    └── README.md
+```mermaid
+graph TD
+    A[coderoomhub-internship] --> B[week_1]
+    A --> C[week_2]
+    A --> D[week_3]
+
+    B --> B1[Task_Week_1.ipynb]
+    B --> B2[automobile_dataset.csv]
+    B --> B3[cleaned_automobile_dataset.csv]
+    B --> B4[README.md]
+
+    C --> C1[Task_Week_2.ipynb]
+    C --> C2[data.csv]
+    C --> C3[README.md]
+
+    D --> D1[Task_Week_3.ipynb]
+    D --> D2[titanic.csv]
+    D --> D3[feature_importance_chart.png]
+    D --> D4[README.md]
 ```
 
 ## 📅 Weekly Progress
