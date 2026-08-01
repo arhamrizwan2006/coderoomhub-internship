@@ -16,17 +16,34 @@ This repository contains all weekly tasks completed as part of the **AI/ML Track
 
 ## 🗂️ Repository Structure
 
-| Folder | Contents |
-|---|---|
-| 📁 `week_1/` | `Task_Week_1.ipynb` · `automobile_dataset.csv` · `cleaned_automobile_dataset.csv` · `README.md` |
-| 📁 `week_2/` | `Task_Week_2.ipynb` · `data.csv` · `README.md` |
-| 📁 `week_3/` | `Task_Week_3.ipynb` · `titanic.csv` · `feature_importance_chart.png` · `README.md` |
-## 📅 Weekly Progress
-| Week | Task | Status | Link |
-|---|---|---|---|
-| 1 | Exploratory Data Analysis on Automobile Dataset | ✅ Completed | [week_1](./week_1) |
-| 2 | Supervised ML on Breast Cancer Dataset (5 models + tuning) | ✅ Completed | [week_2](./week_2) |
-| 3 | Feature Engineering & Ensemble Learning (Titanic Dataset) | ✅ Completed | [week_3](./week_3) |
+<details>
+<summary>📁 <strong>week_1/</strong> — Exploratory Data Analysis</summary>
+
+- 📓 `Task_Week_1.ipynb`
+- 📄 `automobile_dataset.csv`
+- 📄 `cleaned_automobile_dataset.csv`
+- 📘 `README.md`
+
+</details>
+
+<details>
+<summary>📁 <strong>week_2/</strong> — Supervised ML (Breast Cancer Dataset)</summary>
+
+- 📓 `Task_Week_2.ipynb`
+- 📄 `data.csv`
+- 📘 `README.md`
+
+</details>
+
+<details>
+<summary>📁 <strong>week_3/</strong> — Feature Engineering & Ensemble Learning</summary>
+
+- 📓 `Task_Week_3.ipynb`
+- 📄 `titanic.csv`
+- 🖼️ `feature_importance_chart.png`
+- 📘 `README.md`
+
+</details>
 
 ## 🛠️ Tech Stack
 `Python` `Pandas` `NumPy` `Scikit-learn` `XGBoost` `LightGBM` `Matplotlib` `Seaborn`
