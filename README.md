@@ -23,22 +23,26 @@ coderoomhub-internship/
 │   ├── automobile_dataset.csv
 │   ├── cleaned_automobile_dataset.csv
 │   └── README.md
-└── week_2/
-    ├── breast_cancer_ml.ipynb
+├── week_2/
+│   ├── Task_Week_2.ipynb
+│   ├── data.csv
+│   └── README.md
+└── week_3/
+    ├── Task_Week_3.ipynb
+    ├── titanic.csv
+    ├── feature_importance_chart.png
     └── README.md
-    └── data.csv
 ```
 
 ## 📅 Weekly Progress
-
 | Week | Task | Status | Link |
 |---|---|---|---|
 | 1 | Exploratory Data Analysis on Automobile Dataset | ✅ Completed | [week_1](./week_1) |
 | 2 | Supervised ML on Breast Cancer Dataset (5 models + tuning) | ✅ Completed | [week_2](./week_2) |
-| 3 | — | ⏳ Upcoming | — |
+| 3 | Feature Engineering & Ensemble Learning (Titanic Dataset) | ✅ Completed | [week_3](./week_3) |
 
 ## 🛠️ Tech Stack
-`Python` `Pandas` `NumPy` `Scikit-learn` `Matplotlib` `Seaborn`
+`Python` `Pandas` `NumPy` `Scikit-learn` `XGBoost` `LightGBM` `Matplotlib` `Seaborn`
 
 <details>
 <summary><strong>📖 About Code Room Hub Internship Program</strong></summary>
