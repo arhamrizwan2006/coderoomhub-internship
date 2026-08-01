@@ -42,6 +42,10 @@ The objective was to improve model performance through feature engineering and a
 
 </details>
 
+## 📊 Feature Importance
+
+![Feature Importance Chart](feature_importance_chart.png)
+
 <details>
 <summary><strong>📁 Files in this folder</strong></summary>
 
@@ -49,6 +53,7 @@ The objective was to improve model performance through feature engineering and a
 |---|---|
 | `Task_Week_3.ipynb` | Notebook with feature engineering, pipeline, and model comparison |
 | `titanic.csv` | Dataset used for training and evaluation |
+| `feature_importance_chart.png` | Bar chart visualizing feature importance from the best-performing model |
 
 </details>
 
