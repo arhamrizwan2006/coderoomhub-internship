@@ -26,6 +26,7 @@ coderoomhub-internship/
 └── week_2/
     ├── breast_cancer_ml.ipynb
     └── README.md
+    └── data.csv
 ```
 
 ## 📅 Weekly Progress
