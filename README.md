@@ -16,26 +16,34 @@ This repository contains all weekly tasks completed as part of the **AI/ML Track
 
 ## 🗂️ Repository Structure
 
-```mermaid
-graph TD
-    A[coderoomhub-internship] --> B[week_1]
-    A --> C[week_2]
-    A --> D[week_3]
+<details>
+<summary>📁 <strong>week_1/</strong> — Exploratory Data Analysis</summary>
 
-    B --> B1[Task_Week_1.ipynb]
-    B --> B2[automobile_dataset.csv]
-    B --> B3[cleaned_automobile_dataset.csv]
-    B --> B4[README.md]
+- 📓 `Task_Week_1.ipynb`
+- 📄 `automobile_dataset.csv`
+- 📄 `cleaned_automobile_dataset.csv`
+- 📘 `README.md`
 
-    C --> C1[Task_Week_2.ipynb]
-    C --> C2[data.csv]
-    C --> C3[README.md]
+</details>
 
-    D --> D1[Task_Week_3.ipynb]
-    D --> D2[titanic.csv]
-    D --> D3[feature_importance_chart.png]
-    D --> D4[README.md]
-```
+<details>
+<summary>📁 <strong>week_2/</strong> — Supervised ML (Breast Cancer Dataset)</summary>
+
+- 📓 `Task_Week_2.ipynb`
+- 📄 `data.csv`
+- 📘 `README.md`
+
+</details>
+
+<details>
+<summary>📁 <strong>week_3/</strong> — Feature Engineering & Ensemble Learning</summary>
+
+- 📓 `Task_Week_3.ipynb`
+- 📄 `titanic.csv`
+- 🖼️ `feature_importance_chart.png`
+- 📘 `README.md`
+
+</details>
 
 ## 📅 Weekly Progress
 | Week | Task | Status | Link |
