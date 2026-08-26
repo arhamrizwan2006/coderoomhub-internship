@@ -2,25 +2,24 @@
 
 # 🎓 Code Room Hub — AI/ML Track Internship
 
-**6-Week Machine Learning Internship — from exploratory data analysis to unsupervised learning**
+**6-Week Machine Learning Internship — from exploratory data analysis to real-world predictive modeling**
 
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow)
 ![Track](https://img.shields.io/badge/track-AI%2FML-blue)
 ![Duration](https://img.shields.io/badge/duration-6%20weeks-orange)
-![Weeks Completed](https://img.shields.io/badge/weeks%20completed-4%2F6-success)
+![Weeks Completed](https://img.shields.io/badge/weeks%20completed-5%2F6-success)
 
 </div>
 
 ---
 
 ## 📋 Table of Contents
-
 - [About](#-about)
 - [Internship Details](#-internship-details)
-- [Repository Structure](#-repository-structure)
+- [Repository Structure](#️-repository-structure)
 - [Weekly Progress](#-weekly-progress)
 - [Key Highlights](#-key-highlights)
-- [Tech Stack](#-tech-stack)
+- [Tech Stack](#️-tech-stack)
 - [Skills Gained](#-skills-gained)
 - [Author](#-author)
 
@@ -30,7 +29,7 @@
 
 This repository contains all weekly tasks completed as part of the **AI/ML Track Internship at Code Room Hub** — a 6-week Machine Learning Internship including a mandatory 15-Day ML Training phase, completed remotely.
 
-Each week builds on the last — starting from data analysis fundamentals, moving into supervised learning and model evaluation, then feature engineering with advanced ensemble algorithms, and now into **unsupervised learning: clustering and anomaly detection**.
+Each week builds on the last — starting from data analysis fundamentals, moving into supervised learning and model evaluation, then feature engineering with advanced ensemble algorithms, into unsupervised learning (clustering and anomaly detection), and now a **complete real-world ML project: retail sales forecasting**.
 
 ## 📋 Internship Details
 
@@ -40,7 +39,7 @@ Each week builds on the last — starting from data analysis fundamentals, movin
 | **Track** | AI/ML |
 | **Duration** | 1 July 2026 – 30 Aug 2026 |
 | **Mode** | Remote |
-| **Weeks Completed** | 4 / 6 |
+| **Weeks Completed** | 5 / 6 |
 
 ## 🗂️ Repository Structure
 
@@ -79,6 +78,15 @@ Each week builds on the last — starting from data analysis fundamentals, movin
 - 📘 `README.md`
 </details>
 
+<details>
+<summary>📁 <strong>week_5/</strong> — Real-World ML Project: Retail Sales Forecasting</summary>
+
+- 📓 `Task_Week_5.ipynb`
+- 📄 `train.csv`, `store.csv`
+- 🖼️ `images/` — sales distribution, average sales by day of week, daily sales over time, feature importance
+- 📘 `README.md`
+</details>
+
 ## 📅 Weekly Progress
 
 | Week | Task | Key Skills | Status | Link |
@@ -87,7 +95,7 @@ Each week builds on the last — starting from data analysis fundamentals, movin
 | 2 | Supervised ML on Breast Cancer Dataset | 5 classification models, cross-validation, `GridSearchCV` tuning | ✅ Completed | [week_2](./week_2) |
 | 3 | Feature Engineering & Ensemble Learning on Titanic Dataset | Pipelines, encoding, scaling, Random Forest, Gradient Boosting, XGBoost, LightGBM, feature importance | ✅ Completed | [week_3](./week_3) |
 | 4 | Unsupervised Learning — Customer Segmentation & Anomaly Detection | PCA, K-Means, Hierarchical Clustering, DBSCAN, anomaly detection | ✅ Completed | [week_4](./week_4) |
-| 5 | — | — | ⏳ Upcoming | — |
+| 5 | Real-World ML Project — Retail Sales Forecasting & Demand Prediction | End-to-end pipeline, time-based feature engineering, Linear Regression, Random Forest, LightGBM, model comparison | ✅ Completed | [week_5](./week_5) |
 | 6 | — | — | ⏳ Upcoming | — |
 
 ## 🔑 Key Highlights
@@ -96,6 +104,7 @@ Each week builds on the last — starting from data analysis fundamentals, movin
 - 🩺 **Week 2:** Benchmarked 5 classifiers on breast cancer diagnosis data with cross-validation and `GridSearchCV` tuning.
 - 🚢 **Week 3:** Built leak-safe preprocessing pipelines and compared Random Forest, Gradient Boosting, XGBoost & LightGBM on the Titanic dataset.
 - 🛍️ **Week 4:** Segmented 200 mall customers into 5 groups with K-Means and Hierarchical Clustering (cross-validated against each other), reduced dimensionality with PCA, and flagged **6.5% of customers as anomalies** using DBSCAN.
+- 🛒 **Week 5:** Built a complete retail sales forecasting pipeline on 1M+ Rossmann store records — engineered time-based and competition/promo features, and compared Linear Regression, Random Forest, and LightGBM, with **Random Forest achieving the best R² of 0.873**.
 
 ## 🛠️ Tech Stack
 
@@ -126,42 +135,20 @@ Each week builds on the last — starting from data analysis fundamentals, movin
 ![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logoColor=white)
 </details>
 
-<details>
-<summary><strong>Environment</strong></summary>
-<br>
+## 💡 Skills Gained
 
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-</details>
-
-## 🎯 Skills Gained
-
-- Exploratory data analysis and data cleaning on real-world tabular datasets
-- Training and evaluating multiple supervised learning algorithms
-- Cross-validation and hyperparameter tuning with `GridSearchCV`
-- Feature engineering: handling missing data, encoding categorical variables, scaling numeric features
-- Building leak-safe preprocessing + modeling pipelines with `sklearn.Pipeline`
-- Comparing ensemble models (Random Forest, Gradient Boosting, XGBoost, LightGBM)
-- Interpreting model decisions through feature importance analysis
-- Dimensionality reduction with PCA and interpreting explained variance
-- Unsupervised clustering with K-Means, Hierarchical Clustering (dendrograms), and DBSCAN
-- Choosing cluster counts via the elbow method and k-distance graphs
-- Density-based anomaly/outlier detection
-
-<details>
-<summary><strong>📖 About Code Room Hub Internship Program</strong></summary>
-<br>
-
-The AI/ML Track at Code Room Hub focuses on building practical, hands-on machine learning skills — starting from data analysis fundamentals and progressing through model training, evaluation, tuning, feature engineering, and unsupervised learning across real-world datasets.
-</details>
+- End-to-end ML pipeline construction — from raw, messy data to evaluated models
+- Data cleaning and logic-based null handling across multiple real-world datasets
+- Feature engineering (date-based, domain-specific, interaction features)
+- Supervised learning: classification and regression across 8+ algorithms
+- Model evaluation: cross-validation, `GridSearchCV`, MAE/RMSE/R², accuracy comparison
+- Unsupervised learning: dimensionality reduction (PCA), clustering (K-Means, Hierarchical, DBSCAN), anomaly detection
+- Feature importance interpretation (split-based vs. gain-based, tree-based importances)
+- Honest reporting of model limitations and unexpected results, not just best-case numbers
+- Git/GitHub workflow for structured, documented project submissions
 
 ## 👤 Author
 
-<div align="center">
-
 **Arham Rizwan**
-BS Robotics and Artificial Intelligence, University of Lahore
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/arhamrizwan2006)
-[![Portfolio](https://img.shields.io/badge/Portfolio-4B5563?style=for-the-badge)](https://arhamrizwan2006.github.io/portfolio)
-
-</div>
+AI/ML Track Intern — Code Room Hub (CRH-2026-ML-014)
+[GitHub](https://github.com/arhamrizwan2006)
