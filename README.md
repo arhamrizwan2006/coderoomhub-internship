@@ -1,19 +1,21 @@
 <div align="center">
 
-# 🎓 Code Room Hub — AI/ML Track Internship
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:6366f1,100:22c55e&height=200&section=header&text=Code%20Room%20Hub%20—%20AI%2FML%20Internship&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=From%20exploratory%20data%20analysis%20to%20a%20full%20deployed%20ML%20system&descAlignY=55&descSize=16" width="100%"/>
 
-### From exploratory data analysis to real-world predictive modeling
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1200&color=22C55E&center=true&vCenter=true&width=650&lines=6+weeks.+9%2B+algorithms.+1M%2B+rows+processed.;EDA+%E2%86%92+Supervised+%E2%86%92+Unsupervised+%E2%86%92+Deployed+Capstone;Internship+complete+%F0%9F%8E%93" alt="Typing SVG"/>
+
+<br/>
 
 **Code Room Hub** · Internship ID `CRH-2026-ML-014` · Jul 2026 → Aug 2026
 
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge)
-![Track](https://img.shields.io/badge/Track-AI%2FML-blue?style=for-the-badge)
-![Progress](https://img.shields.io/badge/Progress-Week%205-orange?style=for-the-badge)
-![Language](https://img.shields.io/badge/Language-Python-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-22c55e?style=for-the-badge)
+![Track](https://img.shields.io/badge/Track-AI%2FML-6366f1?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-6%2F6%20Weeks-success?style=for-the-badge)
+![Language](https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366f1,100:22c55e&height=3&width=100%25"/>
 
 ## 📑 Table of Contents
 - [📊 Internship Progress](#-internship-progress)
@@ -24,14 +26,14 @@
 - [💡 Skills Gained](#-skills-gained)
 - [👤 Author](#-author)
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366f1,100:22c55e&height=3&width=100%25"/>
 
 ## 📊 Internship Progress
 
 <div align="center">
 
 ```
-Overall Progress:  ████████████████████████░░░░░  83%  (5 / 6 Weeks)
+Overall Progress:  ██████████████████████████████  100%  (6 / 6 Weeks)  🏆 COMPLETE
 ```
 
 </div>
@@ -43,9 +45,7 @@ Overall Progress:  ████████████████████�
 | **3** | Feature Engineering & Ensemble Learning — Titanic | ✅ Completed |
 | **4** | Unsupervised Learning — Customer Segmentation & Anomaly Detection | ✅ Completed |
 | **5** | Real-World ML Project — Retail Sales Forecasting | ✅ Completed |
-| **6** | Capstone Project | ⚪ Pending |
-
----
+| **6** | **Capstone — Retail Out-of-Stock Prediction System** | ✅ **Completed** |
 
 ## 🎯 Week-by-Week Breakdown
 
@@ -189,7 +189,36 @@ Rossmann Data → Clean & Merge → Feature Engineer → Time-Based Split → 3 
 
 </details>
 
----
+<details open>
+<summary><strong>🏆 Week 6 — Capstone: Retail Out-of-Stock Prediction System</strong></summary>
+
+*Full end-to-end ML system — the culmination of the internship: a deployed, explainable, tracked model, not just a notebook*
+
+```
+Retail Data → Leakage-Safe Target → Feature Engineering → 4 Models Tracked (MLflow)
+(76,000 rows)   (Future_OOS, not      (lags, rolling avg,        ↓
+                  same-day OOS)        one-hot encoding)   LightGBM (tuned): ROC-AUC 0.938 ✅
+                                                                       ↓
+                                                    SHAP Explainability → FastAPI + Streamlit → Docker
+```
+
+| What I Learned |
+|---|
+| Catching data leakage from a suspicious 1.0 ROC-AUC and reframing the target as a genuinely future outcome |
+| Handling severe class imbalance (0.53% positive) with SMOTE inside cross-validation folds, not before |
+| Threshold tuning (0.5 → 0.2) as a business decision, not a default setting |
+| Model explainability with SHAP TreeExplainer on the final LightGBM pipeline |
+| Experiment tracking across 4 models with MLflow |
+| Serving one trained pipeline through both a REST API (FastAPI) and an interactive dashboard (Streamlit) |
+| Containerizing the API with Docker for portable, reproducible deployment |
+
+**Key Insight:** The hardest part wasn't training the model — it was catching that the first version was leaking the answer, and then getting one pipeline to behave identically across a notebook, an API, a dashboard, and a container.
+
+**Project:** [`capstone/README.md`](./capstone/README.md) · **Notebook:** [`capstone/capstone.ipynb`](./capstone/capstone.ipynb)
+
+</details>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366f1,100:22c55e&height=3&width=100%25"/>
 
 ## 🗂️ Repository Structure
 
@@ -203,10 +232,14 @@ coderoomhub-internship/
 │   └── images/      → elbow, PCA clusters, dendrogram, k-distance, DBSCAN
 ├── week_5/          → Real-World Project: Retail Sales Forecasting
 │   └── images/      → sales distribution, day-of-week, trend, feature importance
+├── capstone/        → 🏆 Final Capstone: Retail Out-of-Stock Prediction System
+│   ├── images/      → architecture, SHAP, MLflow, API, dashboard, Docker screenshots
+│   ├── app.py       → FastAPI REST API
+│   ├── dashboard.py → Streamlit dashboard
+│   ├── Dockerfile
+│   └── README.md
 └── README.md
 ```
-
----
 
 ## 📈 Performance Highlights
 
@@ -217,8 +250,8 @@ coderoomhub-internship/
 | Week 4 — PCA Variance Retained | Explained Variance | **59.9%** |
 | Week 5 — Retail Sales Forecast (best model) | R² Score | **0.873** (Random Forest) |
 | Week 5 — Dataset Scale | Rows Processed | **1,017,209** |
-
----
+| **Week 6 — Capstone OOS Prediction (best model)** | **ROC-AUC** | **0.938** (LightGBM, tuned) |
+| **Week 6 — Capstone Deployment** | **Interfaces Shipped** | **REST API + Dashboard + Docker** |
 
 ## 🛠️ Tech Stack
 
@@ -240,6 +273,19 @@ coderoomhub-internship/
 ![SciPy](https://img.shields.io/badge/SciPy-0C55A5?style=for-the-badge&logo=scipy&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-016A70?style=for-the-badge&logoColor=white)
 ![LightGBM](https://img.shields.io/badge/LightGBM-6DB33F?style=for-the-badge&logoColor=white)
+![SHAP](https://img.shields.io/badge/SHAP-8A2BE2?style=for-the-badge)
+![imbalanced--learn](https://img.shields.io/badge/imbalanced--learn-SMOTE-critical?style=for-the-badge)
+
+</details>
+
+<details>
+<summary><strong>Deployment & MLOps</strong></summary>
+<br>
+
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 </details>
 
@@ -252,25 +298,26 @@ coderoomhub-internship/
 
 </details>
 
----
-
 ## 💡 Skills Gained
 
 ```
-Data Wrangling        ████████████████████ Cleaning, merging, null-handling across 5 datasets
-Feature Engineering   ████████████████████ Date features, domain features, encoding, scaling
-Supervised Learning   ████████████████████ 9+ algorithms: linear, tree-based, boosting
-Unsupervised Learning ████████████████████ PCA, K-Means, Hierarchical, DBSCAN
-Model Evaluation       ███████████████████ Cross-validation, GridSearchCV, MAE/RMSE/R², accuracy
-Interpretability      ████████████████████ Feature importance (split vs. gain-based)
-Git / GitHub           ███████████████████ Structured, documented weekly submissions
+Data Wrangling         ████████████████████ Cleaning, merging, null-handling across 6 datasets
+Feature Engineering    ████████████████████ Date features, domain features, encoding, scaling
+Supervised Learning    ████████████████████ 9+ algorithms: linear, tree-based, boosting
+Unsupervised Learning  ████████████████████ PCA, K-Means, Hierarchical, DBSCAN
+Model Evaluation       ████████████████████ Cross-validation, GridSearchCV, MAE/RMSE/R², accuracy
+Interpretability       ████████████████████ Feature importance (split vs. gain) + SHAP explainability
+Model Deployment       ████████████████████ REST APIs, interactive dashboards, Docker containerization
+Experiment Tracking    ████████████████████ MLflow logging, run comparison, threshold tuning
+Git / GitHub           ████████████████████ Structured, documented weekly + capstone submissions
 ```
-
----
 
 ## 👤 Author
 
 **Arham Rizwan**
 AI/ML Track Intern — Code Room Hub (`CRH-2026-ML-014`)
+🏆 Internship completed — Weeks 1–6, including final capstone deployment
 
 [![GitHub](https://img.shields.io/badge/GitHub-arhamrizwan2006-181717?style=for-the-badge&logo=github)](https://github.com/arhamrizwan2006)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:6366f1,100:22c55e&height=100&section=footer" width="100%"/>
