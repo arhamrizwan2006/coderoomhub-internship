@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:6366f1,100:22c55e&height=200&section=header&text=Code%20Room%20Hub%20—%20AI%2FML%20Internship&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=From%20exploratory%20data%20analysis%20to%20a%20full%20deployed%20ML%20system&descAlignY=55&descSize=16" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:6366f1,100:22c55e&height=200&section=header&text=Code%20Room%20Hub%20—%20AI%2FML%20Internship&fontSize=32&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=From%20exploratory%20data%20analysis%20to%20a%20full%20deployed%20ML%20system&descAlignY=55&descSize=15" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1200&color=22C55E&center=true&vCenter=true&width=650&lines=6+weeks.+9%2B+algorithms.+1M%2B+rows+processed.;EDA+%E2%86%92+Supervised+%E2%86%92+Unsupervised+%E2%86%92+Deployed+Capstone;Internship+complete+%F0%9F%8E%93" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=19&pause=1200&color=22C55E&center=true&vCenter=true&width=780&lines=6+weeks.+9%2B+algorithms.+1M%2B+rows+processed.;EDA+%E2%86%92+Supervised+%E2%86%92+Unsupervised+%E2%86%92+Capstone;Internship+complete+%F0%9F%8E%93" alt="Typing SVG"/>
 
 <br/>
 
@@ -15,7 +15,7 @@
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366f1,100:22c55e&height=3&width=100%25"/>
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366f1,100:22c55e&height=3&width=100%25"/></p>
 
 ## 📑 Table of Contents
 - [📊 Internship Progress](#-internship-progress)
@@ -26,7 +26,7 @@
 - [💡 Skills Gained](#-skills-gained)
 - [👤 Author](#-author)
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366f1,100:22c55e&height=3&width=100%25"/>
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366f1,100:22c55e&height=3&width=100%25"/></p>
 
 ## 📊 Internship Progress
 
@@ -59,12 +59,10 @@ Raw Dataset → Load & Inspect → Handle Nulls → Visualize → Extract Insigh
 (Automobile)    (df.info())    (median/mode)   (Seaborn)   (price drivers)
 ```
 
-| What I Learned |
-|---|
-| Loading & inspecting real-world tabular data |
-| Handling missing values with domain-appropriate strategies |
-| Univariate & bivariate visualization |
-| Identifying outliers and skewed distributions |
+- 🔹 Loading & inspecting real-world tabular data
+- 🔹 Handling missing values with domain-appropriate strategies
+- 🔹 Univariate & bivariate visualization
+- 🔹 Identifying outliers and skewed distributions
 
 **Notebook:** [`week_1/Task_Week_1.ipynb`](./week_1/Task_Week_1.ipynb)
 
@@ -83,12 +81,10 @@ Breast Cancer Data → Train/Test Split → 5 Models Trained → Cross-Validatio
                               Hyperparameter tuning applied to Decision Tree
 ```
 
-| What I Learned |
-|---|
-| Training & comparing multiple classification algorithms |
-| K-Fold cross-validation for robust evaluation |
-| Hyperparameter tuning with `GridSearchCV` |
-| Reading confusion matrices & classification reports |
+- 🔹 Training & comparing multiple classification algorithms
+- 🔹 K-Fold cross-validation for robust evaluation
+- 🔹 Hyperparameter tuning with `GridSearchCV`
+- 🔹 Reading confusion matrices & classification reports
 
 **Notebook:** [`week_2/Task_Week_2.ipynb`](./week_2/Task_Week_2.ipynb)
 
@@ -108,14 +104,12 @@ Titanic Dataset → Clean & Encode → sklearn Pipeline → 4 Ensemble Models �
                                                     XGBoost: 80.45%
 ```
 
-<img src="week_3/feature_importance_chart.png" width="500">
+<p align="center"><img src="week_3/feature_importance_chart.png" width="500"></p>
 
-| What I Learned |
-|---|
-| Building leak-safe pipelines with `StandardScaler` + model |
-| Comparing 4 ensemble algorithms on identical splits |
-| Split-based vs. gain-based feature importance |
-| `Sex`, `Fare`, `Age` emerged as the strongest survival predictors |
+- 🔹 Building leak-safe pipelines with `StandardScaler` + model
+- 🔹 Comparing 4 ensemble algorithms on identical splits
+- 🔹 Split-based vs. gain-based feature importance
+- 🔹 `Sex`, `Fare`, `Age` emerged as the strongest survival predictors
 
 **Key Insight:** Gain-based importance gave a truer ranking than split-count — split-count favored continuous features (`Age`/`Fare`) purely for having more possible split points.
 
@@ -133,7 +127,7 @@ Mall Customers → Scale Features → PCA (2D) → K-Means + Hierarchical → DB
   (200 rows)      (StandardScaler)  (59.9% var)     (5 clusters each)   (13 anomalies)
 ```
 
-<img src="week_4/images/kmeans_clusters_pca.png" width="500">
+<p align="center"><img src="week_4/images/kmeans_clusters_pca.png" width="500"></p>
 
 | Cluster | Segment | Avg Age | Avg Income | Avg Spend |
 |---|---|---|---|---|
@@ -143,12 +137,10 @@ Mall Customers → Scale Features → PCA (2D) → K-Means + Hierarchical → DB
 | 3 | Young Budget-Conscious | 24.9 | $39.7k | 61.2 |
 | 4 | Older Male, Moderate Spenders | 55.7 | $53.7k | 36.8 |
 
-| What I Learned |
-|---|
-| Dimensionality reduction with PCA for visualization |
-| K-Means (elbow method) vs. Hierarchical Clustering (dendrogram) — cross-validated, strong agreement |
-| DBSCAN for density-based anomaly detection — **13/200 customers (6.5%) flagged** |
-| Interpreting and profiling clusters into actionable business segments |
+- 🔹 Dimensionality reduction with PCA for visualization
+- 🔹 K-Means (elbow method) vs. Hierarchical Clustering (dendrogram) — cross-validated, strong agreement
+- 🔹 DBSCAN for density-based anomaly detection — **13/200 customers (6.5%) flagged**
+- 🔹 Interpreting and profiling clusters into actionable business segments
 
 **Notebook:** [`week_4/Task_Week_4.ipynb`](./week_4/Task_Week_4.ipynb)
 
@@ -167,7 +159,7 @@ Rossmann Data → Clean & Merge → Feature Engineer → Time-Based Split → 3 
                                                         Linear Reg.:   R² 0.261
 ```
 
-<img src="week_5/images/feature_importance.png" width="500">
+<p align="center"><img src="week_5/images/feature_importance.png" width="500"></p>
 
 | Model | MAE | RMSE | R² |
 |---|---:|---:|---:|
@@ -175,13 +167,11 @@ Rossmann Data → Clean & Merge → Feature Engineer → Time-Based Split → 3 
 | **Random Forest** | **766.78** | **1107.82** | **0.873** |
 | LightGBM | 1328.59 | 1779.38 | 0.673 |
 
-| What I Learned |
-|---|
-| Building a full pipeline: load → clean → merge → engineer → encode → time-split |
-| Row-wise feature engineering (`CompetitionOpen`, `Promo2Active`) using `.apply()` |
-| **Time-based splitting** instead of random shuffling to prevent lookahead leakage |
-| Dropping `Customers` as a leakage feature (not known at prediction time) |
-| Honest reporting: LightGBM underperformed Random Forest here — flagged as a tuning gap, not hidden |
+- 🔹 Building a full pipeline: load → clean → merge → engineer → encode → time-split
+- 🔹 Row-wise feature engineering (`CompetitionOpen`, `Promo2Active`) using `.apply()`
+- 🔹 **Time-based splitting** instead of random shuffling to prevent lookahead leakage
+- 🔹 Dropping `Customers` as a leakage feature (not known at prediction time)
+- 🔹 Honest reporting: LightGBM underperformed Random Forest here — flagged as a tuning gap, not hidden
 
 **Key Insight:** `CompetitionDistance` and `Store` dominated feature importance — a sign the model partly memorizes per-store baselines rather than purely learning generalizable demand patterns.
 
@@ -202,15 +192,13 @@ Retail Data → Leakage-Safe Target → Feature Engineering → 4 Models Tracked
                                                     SHAP Explainability → FastAPI + Streamlit → Docker
 ```
 
-| What I Learned |
-|---|
-| Catching data leakage from a suspicious 1.0 ROC-AUC and reframing the target as a genuinely future outcome |
-| Handling severe class imbalance (0.53% positive) with SMOTE inside cross-validation folds, not before |
-| Threshold tuning (0.5 → 0.2) as a business decision, not a default setting |
-| Model explainability with SHAP TreeExplainer on the final LightGBM pipeline |
-| Experiment tracking across 4 models with MLflow |
-| Serving one trained pipeline through both a REST API (FastAPI) and an interactive dashboard (Streamlit) |
-| Containerizing the API with Docker for portable, reproducible deployment |
+- 🔹 Catching data leakage from a suspicious 1.0 ROC-AUC and reframing the target as a genuinely future outcome
+- 🔹 Handling severe class imbalance (0.53% positive) with SMOTE inside cross-validation folds, not before
+- 🔹 Threshold tuning (0.5 → 0.2) as a business decision, not a default setting
+- 🔹 Model explainability with SHAP TreeExplainer on the final LightGBM pipeline
+- 🔹 Experiment tracking across 4 models with MLflow
+- 🔹 Serving one trained pipeline through both a REST API (FastAPI) and an interactive dashboard (Streamlit)
+- 🔹 Containerizing the API with Docker for portable, reproducible deployment
 
 **Key Insight:** The hardest part wasn't training the model — it was catching that the first version was leaking the answer, and then getting one pipeline to behave identically across a notebook, an API, a dashboard, and a container.
 
@@ -218,7 +206,7 @@ Retail Data → Leakage-Safe Target → Feature Engineering → 4 Models Tracked
 
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366f1,100:22c55e&height=3&width=100%25"/>
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366f1,100:22c55e&height=3&width=100%25"/></p>
 
 ## 🗂️ Repository Structure
 
@@ -320,4 +308,4 @@ AI/ML Track Intern — Code Room Hub (`CRH-2026-ML-014`)
 
 [![GitHub](https://img.shields.io/badge/GitHub-arhamrizwan2006-181717?style=for-the-badge&logo=github)](https://github.com/arhamrizwan2006)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:6366f1,100:22c55e&height=100&section=footer" width="100%"/>
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:6366f1,100:22c55e&height=100&section=footer" width="100%"/></p>
